@@ -6,9 +6,8 @@
     font-style: normal;
     src: local('Proxima Nova Light'),
          local('Proxima Nova Lt')
-         url('../fonts/ProximaNova-Light.woff') format('woff'),
-         url('../fonts/ProximaNova-Light.eot') format('eot'),
-         url('../fonts/ProximaNova-Light.ttf') format('ttf');
+         url('../fonts/ProximaNovaLight.woff') format('woff'),
+         url('../fonts/ProximaNovaLight.eot') format('eot');
     font-display: swap;
 }
 
@@ -18,9 +17,8 @@
     font-style: normal;
     src: local('Proxima Nova Regular'),
          local('Proxima Nova Rg')
-         url('../fonts/ProximaNova-Regular.woff') format('woff'),
-         url('../fonts/ProximaNova-Regular.eot') format('eot'),
-         url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+         url('../fonts/ProximaNovaRegular.woff') format('woff'),
+         url('../fonts/ProximaNovaRegular.eot') format('eot');
     font-display: swap;
 }
 
@@ -30,9 +28,8 @@
     font-style: normal;
     src: local('Proxima Nova SemiBold'),
          local('Proxima Nova SB')
-         url('../fonts/ProximaNova-Semibold.woff') format('woff'),
-         url('../fonts/ProximaNova-Semibold.eot') format('eot'),
-         url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
+         url('../fonts/ProximaNovaSemibold.woff') format('woff'),
+         url('../fonts/ProximaNovaSemibold.eot') format('eot');
     font-display: swap;
 }
 
@@ -41,9 +38,8 @@
     font-weight: 700;
     font-style: normal;
     src: local('Proxima Nova Bold'),
-         local('Proxima Nova Bd')
-         url('../fonts/ProximaNova-Bold.woff') format('woff'),
-         url('../fonts/ProximaNova-Bold.eot') format('eot'),
-         url('../fonts/ProximaNova-Bold.ttf') format('ttf');
+         local('Proxima Nova Bd'),
+         url('../fonts/ProximaNovaBold.woff') format('woff'),
+         url('../fonts/ProximaNovaBold.eot') format('eot');
     font-display: swap;
 }
