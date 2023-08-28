@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Proxima Nova Light'),
+         local('Proxima Nova Lt')
+         url('../fonts/ProximaNova-Light.woff') format('woff'),
+         url('../fonts/ProximaNova-Light.eot') format('eot'),
+         url('../fonts/ProximaNova-Light.ttf') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Proxima Nova Regular'),
+         local('Proxima Nova Rg')
+         url('../fonts/ProximaNova-Regular.woff') format('woff'),
+         url('../fonts/ProximaNova-Regular.eot') format('eot'),
+         url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Proxima Nova SemiBold'),
+         local('Proxima Nova SB')
+         url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+         url('../fonts/ProximaNova-Semibold.eot') format('eot'),
+         url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Proxima Nova Bold'),
+         local('Proxima Nova Bd')
+         url('../fonts/ProximaNova-Bold.woff') format('woff'),
+         url('../fonts/ProximaNova-Bold.eot') format('eot'),
+         url('../fonts/ProximaNova-Bold.ttf') format('ttf');
+    font-display: swap;
+}

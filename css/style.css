@@ -1,0 +1,26 @@
+body{
+    color: white;
+    background-color: #162831;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Proxima Nova Light'),
+         local('Proxima Nova Lt')
+         url('../fonts/ProximaNova-Light.woff') format('woff'),
+         url('../fonts/ProximaNova-Light.eot') format('eot'),
+         url('../fonts/ProximaNova-Light.ttf') format('ttf');
+    font-display: swap;
+}
+
+h1{
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+}
+
+.dd{
+    font-family: 'dd';
+    font-weight: 400;
+}
