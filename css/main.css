@@ -165,14 +165,22 @@ h1{
     margin: 0px auto;
 }
 
+.about_name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.about_text{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 .about_box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-columns: 526px;
     row-gap: 100px;
     column-gap: 24px;
-
-    
 }
 
 .about_item{
@@ -186,7 +194,6 @@ h1{
 }
 
 .photo{
-
     background-image: url("../images/sessions-bg.png") ;
     
     background-size: cover;
@@ -194,4 +201,6 @@ h1{
     filter: contrast(400%);
     
 }
+
+
 
