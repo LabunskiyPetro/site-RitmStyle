@@ -78,7 +78,7 @@ main{
     gap: 150px;
 }
 
-h2::before, h2::after, h3::before, h3::after{
+h2::before, h2::after, h3::before, h3::after,th::before{
     content: '';
     display: inline-block;
 
@@ -184,22 +184,89 @@ h1{
 }
 
 .about_item{
-    height: 365px;
-    width: 526px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
 
+
+
 .photo{
-    background-image: url("../images/sessions-bg.png") ;
+    height: 365px;
+    width: 526px;
     
-    background-size: cover;
     border-radius: 10px;    
     filter: contrast(400%);
+
+}
+
+.dd{
+    display: flex;
+    gap: 134px;
+}
+
+table{
+    display: flex;
+    align-items: center;
+}
+
+
+tbody{
+    display: flex;
+    flex-direction: column;
     
+
+    gap: 31px;
+    width: 416px;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+th{
+    text-align: left;
+}
+
+th::before{
+    content: '';
+    display: inline-block;
+
+    width: 18px;
+    height: 9px;
+    margin-right: 20px;
+    background: url('../images/petal_blue.svg') center / cover;  
+}
+
+td{
+    font-family: 'El Messiri';
+    text-align: left;
+}
+
+.dd img{
+    width: 526px;
+    height: 396px;
+}
+
+.dd p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ff{
+    display: grid;
+    grid-template-columns: 856px 290px;
+    grid-auto-columns: 290px;
+    row-gap: 24px;
+    column-gap: 48px;
+}
+
+iframe{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 
