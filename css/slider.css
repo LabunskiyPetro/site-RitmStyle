@@ -1,61 +1,63 @@
+:root{
+    --imgAmount: 4;
+    --imgSizeActive: 636px;
+    --imgSize: 500px;
+    --imgGap: 50px;
+
+}
+
+
+
 .slider-container{
     max-width: 1736px;
     margin: 0px auto;
 }
 
 .slider{
-    width: calc(636px + 500px * 2 + 50px * 2);
-    height: 350px;
-    
+    width: calc(var(--imgSizeActive) + var(--imgSize)*2 + var(--imgGap) *2);
+
     overflow: hidden;   
 }
 
-.slider-line{
-    width: calc(636px + 50px * 3 + 500px * 3);
-    height: 350px;
-
+.slider__line{
+    width: calc(var(--imgSizeActive) + var(--imgSize) * var(--imgAmount) + var(--imgGap) * var(--imgAmount));
+    
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: var(--imgGap);
 
     position: relative;
 }
 
-.slider-image{
+.slider__image{
+    width: 410px;   
+    height: 196px;
+
     background-color: #018ABE;
     border-radius: 10px;
     
     padding: 40px 45px;
 
-    width: 410px;   
-    height: 236px;
-
     opacity: 30%;
 
     position: relative;
-
     left: 0px;
-
     
-    transition: all 6s ease-in;
-    transition: left 2s ease;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
+    transition: left 1.2s ease-in-out;
 }
 
-.slider-image_active{
-    padding: 50px 60px 0px;
+.slider__image_active{
+    width: 516px;
+    height: 250px;
+    
+    padding: 50px 60px;
     
     font-size: 1.25rem;
 
-    width: 516px;
-    height: 300px;
-
     opacity: 100%;
-    z-index: 1;
 }
 
-.slider-nav{
+.slider__nav{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -63,7 +65,7 @@
     padding-top: 60px;
 }
 
-.slider-radio{
+.slider__radio{
     width: 16px;
     height: 16px;
 
@@ -76,33 +78,41 @@
     opacity: 40%;
 }
 
-.slider-radio:checked{
+.slider__radio:checked{
     opacity: 100%;
 }
 
 
+.slider__content-box{
+    height: 196px;
+    overflow: hidden;
+}
 
-
-
-.name{
-    font-size: 1rem;
+.slider__name{
+    font-size: 1em;
     font-weight: 700;
     line-height: 1.4;
 
     padding-bottom: 15px;
 }
 
-.active .name{
-    font-size: 1.25rem;
+.slider__description{   
+    font-size: 0.625rem;
     font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.slider__image_active > .slider__content-box{
+    height: 250px;
+}
+
+.slider__image_active > .slider__content-box > .slider__name{
+    font-size: 1.25rem;
+    
     padding-bottom: 20px;
 }
 
-.description{   
-    font-size: 0.625rem;
-    font-weight: 300;
-}
-
-.active .description{
+.slider__image_active > .slider__content-box > .slider__description{
     font-size: 0.875rem;
 }
+

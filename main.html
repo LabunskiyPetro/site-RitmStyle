@@ -2,13 +2,13 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta slider__name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RitmStyle</title>
-    <link rel="shortcut icon" href="images/tab/logo.png">   <!-- Імпорт логотипа-->
+    <link rel="shortcut icon" href="images/tab/logo.png">   <!-- Імпорт логотипа -->
     <link rel="stylesheet" href="css/fonts.css">            <!-- Імпорт шрифтів -->
     <link rel="stylesheet" href="css/global.css">           <!-- Імпорт глобального стилю -->
     <link rel="stylesheet" href="css/main.css">             <!-- Імпорт головного стилю -->
-    <link rel="stylesheet" href="css/slider.css">           <!-- Імпорт слайдера стилю -->
+    <link rel="stylesheet" href="css/slider.css">           <!-- Імпорт стилів для слайдера -->
 </head>
 <body>
     <header class="header">
@@ -47,15 +47,15 @@
         </div>
     </header>
     <main class="content">
-        <section class="hero">
+        <section class="content-hero">
             <div class="hero__container global-container">
                 <h3 class="subtitle">Зміцнення здоров'я</h3>
                 <h1 class="title title_box">Акватерапія RitmStyle</h1>
             </div>
         </section>
-        <section class="sessions">
+        <section class="content-sessions">
             <div class="global-container">
-                <h2 class="section-name section-name_main">Сеанси RitmStyle</h2>
+                <h2 class="section-slider__name section-name_main">Сеанси RitmStyle</h2>
                 <div class="sessions__box">
                     <div class="img-box img-box_big">
                         <a class="img-box__link img-box__link_main">Стандартний RitmStyle</a>
@@ -75,46 +75,62 @@
                 </div>  
             </div>
         </section>
-        <section class="slider_">
+        <section class="content-slider">
             <h2 class="section-name section-name_main">Відгуки</h2>
             <div class="slider-container">
                 <div class="slider">
-                    <div class="slider-line">
-                        <div class="slider-image" onclick="position(0)">
-                            <p class="name">Олександра Дмитрієва</p>
-                            <p class="description"> 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.<br><br>
-                                Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at.  
-                            </p>
+                    <div class="slider__line">
+                        <div class="slider__image" onclick="position(0)">
+                            <div class="slider__content-box">
+                                <p class="slider__name">Олександра Дмитрієва</p>
+                                <p class="slider__description"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur nulla viverra egestas tellus. Cursus scelerisque phasellus netus proin. Etiam mauris maecenas facilisis faucibus mauris eleifend purus. Purus dictum vulputate elementum mauris amet.   
+                                </p>
+                                <p class="slider__description"> 
+                                    Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at.
+                                </p>
+                            </div>
                         </div>
-                        <div class="slider-image slider-image_active" onclick="position(1)">
-                            <p class="name">Кіра Іванова</p>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.<br><br>
-                                Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis. 
-                            </p>
+                        <div class="slider__image slider__image_active" onclick="position(1)">
+                            <div class="slider__content-box">
+                                <p class="slider__name">Кіра Іванова</p>
+                                <p class="slider__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+                                </p>
+                                <p class="slider__description">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.                          
+                                </p>
+                            </div>
                         </div>
-                        <div class="slider-image" onclick="position(2)">
-                            <p class="name">Яна Жернова</p>
-                            <p class="description"> 
-                                LLorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.<br><br>
-                                Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper. 
-                            </p>
+                        <div class="slider__image" onclick="position(2)">
+                            <div class="slider__content-box">
+                                <p class="slider__name">Яна Жернова</p>
+                                <p class="slider__description"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.
+                                     </p>
+                                <p class="slider__description">
+                                    Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper.
+                                </p>
+                            </div>
                         </div>
-                        <div class="slider-image" onclick="position(3)">
-                            <p class="name">Яна Жернова</p>
-                            <p class="description"> 
-                                LLorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.<br><br>
-                                Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper. 
-                            </p>
+                        <div class="slider__image" onclick="position(3)">
+                            <div class="slider__content-box">
+                                <p class="slider__name">Яна Жернова</p>
+                                <p class="slider__description"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.
+                                </p>
+                                <p class="slider__description">
+                                    Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper.
+                                </p>
+                            </div>
                         </div>
                     </div>  
-                </div>
-                <div class="slider-nav">
-                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(0)" value="1">
-                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(1)" value="2" checked>
-                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(2)" value="3">
-                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(3)" value="4">
+                    <div class="slider__nav">
+                        <input class="slider__radio" type="radio" name="slider-nav" onclick="position(0)">
+                        <input class="slider__radio" type="radio" name="slider-nav" onclick="position(1)" checked>
+                        <input class="slider__radio" type="radio" name="slider-nav" onclick="position(2)">
+                        <input class="slider__radio" type="radio" name="slider-nav" onclick="position(3)">
+                    </div>
                 </div>
             </div>
         </section>
@@ -141,7 +157,7 @@
         </section>
         <section>
             <div class="main_container_light">
-                <h2 class="section-name section-name_main">Вартість сеансів</h2>
+                <h2 class="section-slider__name section-name_main">Вартість сеансів</h2>
                 <div class="dd">
                     <table>
                         <tbody>

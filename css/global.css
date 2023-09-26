@@ -99,6 +99,7 @@ h1, h2, h3{
     line-height: calc(34 / 24);
 }
  
+.section-name:before, .section-name::after,
 .subtitle::before, .subtitle::after, 
 th::before{
     content: '';
