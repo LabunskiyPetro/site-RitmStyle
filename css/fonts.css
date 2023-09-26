@@ -5,10 +5,10 @@
     font-weight: 300;
     font-style: normal;
     src: local('Proxima Nova Light'),
-         local('Proxima Nova Lt')
+         local('Proxima Nova Lt'),
          url('../fonts/ProximaNovaLight.woff') format('woff'),
          url('../fonts/ProximaNovaLight.eot') format('eot');
-    font-display: swap;
+    font-display: auto;
 }
 
 @font-face {
@@ -16,10 +16,10 @@
     font-weight: 400;
     font-style: normal;
     src: local('Proxima Nova Regular'),
-         local('Proxima Nova Rg')
+         local('Proxima Nova Rg'),
          url('../fonts/ProximaNovaRegular.woff') format('woff'),
          url('../fonts/ProximaNovaRegular.eot') format('eot');
-    font-display: swap;
+    font-display: auto;
 }
 
 @font-face {
@@ -27,10 +27,10 @@
     font-weight: 600;
     font-style: normal;
     src: local('Proxima Nova SemiBold'),
-         local('Proxima Nova SB')
+         local('Proxima Nova SB'),
          url('../fonts/ProximaNovaSemibold.woff') format('woff'),
          url('../fonts/ProximaNovaSemibold.eot') format('eot');
-    font-display: swap;
+    font-display: auto;
 }
 
 @font-face {
@@ -41,5 +41,5 @@
          local('Proxima Nova Bd'),
          url('../fonts/ProximaNovaBold.woff') format('woff'),
          url('../fonts/ProximaNovaBold.eot') format('eot');
-    font-display: swap;
+    font-display: auto;
 }

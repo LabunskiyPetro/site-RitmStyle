@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    
+    color: white;
+
+    background-color: #162831;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3{
+    font-family: 'El Messiri';
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.global-container{
+    max-width: 1296px;
+    margin: 0px auto;
+}
+
+/* header */
+.header{
+    height: 60px;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-img{
+    height: 60px;
+    width: 60px;
+}
+
+.navigation__box{ 
+    display: flex;
+    gap: 50px;
+}
+
+.navigation__item{
+    list-style-type: none;
+}
+
+.navigation__link{
+    font-size: 0.875rem;
+    line-height: calc(19 / 14);
+}
+
+.button-sign-up, .button-sign-up:hover{
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: calc(18 / 13);
+    
+    background-color: #018ABE;
+    border-radius: 3px;
+
+    width: 125px;
+    padding: 9px 15px;
+}
+
+.title{
+    font-size: 4rem;
+    line-height: calc(90 / 64);
+    text-align: center;
+}
+
+.title_box{
+    max-width: 587px;
+}
+
+.section-name{
+    font-size: 2.625rem;
+    font-weight: 700;
+    line-height: calc(59 / 42);
+}
+
+.section-name_main{
+    padding-bottom: 100px;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    line-height: calc(34 / 24);
+}
+ 
+.subtitle::before, .subtitle::after, 
+th::before{
+    content: '';
+    display: inline-block;
+
+    width: 28px;
+    height: 14px;
+}
+
+.section-name::before, .section-name::after{
+    margin: 0px 45px;
+
+    background: url('../images/petal_blue.svg'); 
+}
+
+.subtitle::before,.subtitle::after{
+    margin: 0px 66px;
+
+    background: url('../images/petal_white.svg'); 
+}
+
+.section-name::after, .subtitle::after{
+    transform: scaleX(-1);
+}
+
+.img-box{
+    display: flex;
+    align-items: end;
+
+    border-radius: 10px;
+    background: url('../images/sessions-bg.png') center / cover;
+}
+
+.img-box_big{    
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.img-box__link{
+    font-size: 1.5rem;
+    line-height: calc(34 / 24);
+}
+
+.img-box__link_main{
+    padding: 40px 30px;
+}
+

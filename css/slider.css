@@ -1,31 +1,58 @@
 .slider-container{
-    max-width: 1920px;
+    max-width: 1736px;
     margin: 0px auto;
 }
 
 .slider{
-    width: 1736px;
+    width: calc(636px + 500px * 2 + 50px * 2);
     height: 350px;
+    
     overflow: hidden;   
-    margin: 0px auto;
 }
 
 .slider-line{
-    width: 2694px;
+    width: calc(636px + 50px * 3 + 500px * 3);
     height: 350px;
+
     display: flex;
     align-items: center;
     gap: 50px;
+
     position: relative;
 }
 
 .slider-image{
     background-color: #018ABE;
     border-radius: 10px;
-    padding: 40px 45px 0px;
-    width: 410px;
+    
+    padding: 40px 45px;
+
+    width: 410px;   
     height: 236px;
+
     opacity: 30%;
+
+    position: relative;
+
+    left: 0px;
+
+    
+    transition: all 6s ease-in;
+    transition: left 2s ease;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+}
+
+.slider-image_active{
+    padding: 50px 60px 0px;
+    
+    font-size: 1.25rem;
+
+    width: 516px;
+    height: 300px;
+
+    opacity: 100%;
+    z-index: 1;
 }
 
 .slider-nav{
@@ -39,23 +66,23 @@
 .slider-radio{
     width: 16px;
     height: 16px;
+
     appearance: none;
+
     border: 2px solid #999;
-    background-color: white;
-    opacity: 40%;
     border-radius: 3px;
+    background-color: white;
+
+    opacity: 40%;
 }
 
 .slider-radio:checked{
     opacity: 100%;
 }
 
-.active{
-    padding: 50px 60px 0px;
-    width: 516px;
-    height: 300px;
-    opacity: 100%;
-}
+
+
+
 
 .name{
     font-size: 1rem;

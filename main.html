@@ -1,61 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RitmStyle</title>
-    <link rel="shortcut icon" href="images/logo.png">
-    <link rel="stylesheet" href="css/fonts.css"> <!-- Імпорт стилів -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="shortcut icon" href="images/tab/logo.png">   <!-- Імпорт логотипа-->
+    <link rel="stylesheet" href="css/fonts.css">            <!-- Імпорт шрифтів -->
+    <link rel="stylesheet" href="css/global.css">           <!-- Імпорт глобального стилю -->
+    <link rel="stylesheet" href="css/main.css">             <!-- Імпорт головного стилю -->
+    <link rel="stylesheet" href="css/slider.css">           <!-- Імпорт слайдера стилю -->
 </head>
 <body>
-    <header>
-        <div class="main_container">
-            <div class="header_container">
-                <a class="logo">
-                    <img src="images/logo.svg" alt="logo">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="#">Головна</a></li>
-                        <li><a href="#">Сеанси</a></li>
-                        <li><a href="#">Відгуки</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Новини</a></li>
-                        <li><a href="#">Про мене</a></li>
-                        <li><a href="#">Блог</a></li>
-                    </ul>
-                </nav>
-                <a class="button" href="https://www.google.com/">
-                    Записатись на сеанс
-                </a>
-            </div>
+    <header class="header">
+        <div class="header__container global-container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="images/header/logo.svg" alt="logo">
+            </a>    
+            <nav class="navigation">
+                <ul class="navigation__box">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Головна</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Сеанси</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Відгуки</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Контакти</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Новини</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Про мене</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="button-sign-up" href="#">
+                Записатись на сеанс
+            </a>
         </div>
     </header>
-    <main>
-        <section>
-            <div class="main_container">
-                <div class="title_container">
-                    <h3>Зміцнення здоров'я</h3>
-                    <h1>Акватерапія RitmStyle</h1>
-                </div>
+    <main class="content">
+        <section class="hero">
+            <div class="hero__container global-container">
+                <h3 class="subtitle">Зміцнення здоров'я</h3>
+                <h1 class="title title_box">Акватерапія RitmStyle</h1>
             </div>
         </section>
-        <section>
-            <div class="main_container">
-                <h2>Сеанси RitmStyle</h2>
-                <div class="sessions">
-                    <a><div>Стандартний RitmStyle</div></a>
-                    <a><div>RitmStyle для пар</div></a>
-                    <a><div>RitmStyle з повним зануренням під воду</div></a>
-                    <a><div>RitmStyle для вагітних</div></a>
-                    <a><div>RitmStyle + барвиста підводна фотосесія</div></a>
+        <section class="sessions">
+            <div class="global-container">
+                <h2 class="section-name section-name_main">Сеанси RitmStyle</h2>
+                <div class="sessions__box">
+                    <div class="img-box img-box_big">
+                        <a class="img-box__link img-box__link_main">Стандартний RitmStyle</a>
+                    </div>
+                    <div class="img-box">
+                        <a class="img-box__link img-box__link_main">RitmStyle для пар</a>
+                    </div>
+                    <div class="img-box">
+                        <a class="img-box__link img-box__link_main">RitmStyle з повним зануренням під воду</a>
+                    </div>
+                    <div class="img-box">
+                        <a class="img-box__link img-box__link_main">RitmStyle для вагітних</a>
+                    </div>
+                    <div class="img-box">
+                        <a class="img-box__link img-box__link_main">RitmStyle + барвиста підводна фотосесія</a>
+                    </div>
                 </div>  
             </div>
         </section>
-        <section>
-            <h2>Відгуки</h2>
+        <section class="slider_">
+            <h2 class="section-name section-name_main">Відгуки</h2>
             <div class="slider-container">
                 <div class="slider">
                     <div class="slider-line">
@@ -66,7 +87,7 @@
                                 Hendrerit sit cras ullamcorper morbi quam vitae ante nibh. Ornare ipsum mi nisl augue placerat lacus. Dolor ipsum fermentum viverra bibendum faucibus urna. Arcu, ut sed tellus lacus quisque diam. Semper sed aenean in etiam mus praesent diam semper in. Pretium id a amet, massa ligula nibh faucibus ornare. Ut aenean rhoncus sed nam ut diam dapibus. Risus nibh faucibus eu vestibulum tempor, quis ultrices mauris. Porta enim, donec odio sagittis, eget velit at.  
                             </p>
                         </div>
-                        <div class="active slider-image ">
+                        <div class="slider-image slider-image_active">
                             <p class="name">Кіра Іванова</p>
                             <p class="description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.<br><br>
@@ -90,16 +111,16 @@
                     </div>  
                 </div>
                 <div class="slider-nav">
-                    <input class="slider-radio" type="radio" name="fav_language" value="1" checked>
-                    <input class="slider-radio" type="radio" name="fav_language" value="2">
-                    <input class="slider-radio" type="radio" name="fav_language" value="3">
-                    <input class="slider-radio" type="radio" name="fav_language" value="4">
+                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(0)" value="1">
+                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(1)" value="2"checked>
+                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(2)" value="3">
+                    <input class="slider-radio" type="radio" name="fav_language" onclick="position(3)" value="4">
                 </div>
-                </div>
+            </div>
         </section>
         <section>
             <div class="main_container_light">
-                <h2>Про RitmStyle</h2>
+                <h2 class="section-name section-name_main">Про RitmStyle</h2>
                 <div class="about_box">
                     <div class="about_item">
                         <p class="about_name">RitmStyle масаж</p>
@@ -120,7 +141,7 @@
         </section>
         <section>
             <div class="main_container_light">
-                <h2>Вартість сеансів</h2>
+                <h2 class="section-name section-name_main">Вартість сеансів</h2>
                 <div class="dd">
                     <table>
                         <tbody>
@@ -147,30 +168,42 @@
                         </tbody>
                     </table>
                     <div>
-                        <img src="/images/price-img.png">
+                        <img src="images/price-img.png">
                         <p>Подарочный сертификат</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="main_container">
+        <section>   
+            <div class="global-container">
                 <div class="ff">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10293.28743350271!2d24.0431743521046!3d49.836409623027386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add8113c375a3%3A0xe519f6447de7effd!2z0KXQvtGB0YLQtdC7INCe0YHRgtGA0ZbQsg!5e0!3m2!1suk!2sua!4v1694985493969!5m2!1suk!2sua" width="856" height="604" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="ffr">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis aperiam odit, officia quaerat commodi quis quae eum, qui vero doloribus in fugiat. Neque ex veritatis dolorum, aperiam quis amet.
+                        <p>Басейн WorkClass</p>
+                        <p>Шевченківська 140</p>
+                        <p>м. Т. Шевченка</p>
+                        <p>Запис за домовленістю</p>
+                        <a>Записатись на сеанс</a>
                     </div>
                     <div class="ffr">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa tempora magnam?
+                        <p>Басейн WorkClass</p>
+                        <p>Шевченківська 140</p>
+                        <p>м. Т. Шевченка</p>
+                        <p>Запис за домовленістю</p>
+                        <a>Записатись на сеанс</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
-    
-    
-    <script src="script.js"></script>
+    <footer>
+        <div class="global-container">
+            <div class="footer">
+                <p>© 2022-2023 RitmStyle</p>
+                <p>Зроблено labunskiy</p>  
+            </div>
+        </div>
+    </footer>
+    <script src="js/slider.js"></script>
 </body>
 </html>
-
