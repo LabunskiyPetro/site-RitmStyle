@@ -4,7 +4,7 @@
     gap: 150px;
 }
 
-.hero__container{
+.content-hero__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,36 +17,14 @@
     background: url("../images/hero/bg.png") center / cover; 
 }
 
-.sessions__box{
+.content-sessions__box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 258px;
     grid-gap: 24px;
 }
 
-
-
-
-
-
-
-
-.main_container_light{
-    max-width: 1076px;
-    margin: 0px auto;
-}
-
-.about_name{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.about_text{
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.about_box{
+.about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-columns: 526px;
@@ -54,80 +32,110 @@
     column-gap: 24px;
 }
 
-.about_item{
+.about__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
 }
 
+.about__item_left{
+    padding-left: 40px;
+}
 
+.about__name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: calc(34 / 24);
 
-.photo{
-    height: 365px;
+    margin-bottom: 30px;
+}
+
+.about__text{
+    font-weight: 300;
+    line-height: calc(23 / 16);
+
+    margin-bottom: 1rem;
+}
+
+.about__text_box{
+    width: 466px;
+}
+
+.about__img{
     width: 526px;
+    height: 365px;
     
     border-radius: 10px;    
-    filter: contrast(400%);
-
 }
 
-.dd{
+.about__img_height{
+    height: 400px;
+}
+
+.price{
     display: flex;
-    gap: 134px;
+    justify-content: space-between;
 }
 
-table{
+.price__table{
     display: flex;
     align-items: center;
 }
 
+.price__box{
+    width: 416px;
 
-tbody{
     display: flex;
     flex-direction: column;
-    
-
     gap: 31px;
-    width: 416px;
 }
 
-tr{
+.price__row{
     display: flex;
     justify-content: space-between;
+}
+
+.price__row-name, .price__row-price{
     font-size: 1.125rem;
+    line-height: calc(25 / 18);
 }
 
-th{
-    text-align: left;
-}
-
-th::before{
+.price__row-name::before{
     content: '';
     display: inline-block;
 
     width: 18px;
     height: 9px;
+
     margin-right: 20px;
-    background: url('../images/petal_blue.svg') center / cover;  
+    background: url('../images/global/petal_blue.svg') center / cover;  
 }
 
-td{
+.price__row-name{
+    font-weight: 400
+}
+
+.price__row-price{
     font-family: 'El Messiri';
-    text-align: left;
+    font-weight: 700;
 }
 
-.dd img{
+.price__img{
     width: 526px;
     height: 396px;
 }
 
-.dd p{
+.price__img-description{
+    font-family: 'El Messiri';
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: calc(29 / 21);
     text-align: center;
-    padding-top: 30px;
+
+    margin-top: 30px;
 }
 
-.ff{
+.contacts{
     display: grid;
     grid-template-columns: 856px 290px;
     grid-auto-columns: 290px;
@@ -135,21 +143,86 @@ td{
     column-gap: 48px;
 }
 
-iframe{
+.contacts__map{
+    width: 856px;
+    height: 604px;
+    
+    border: 0px;
+    border-radius: 10px;
+
     grid-row-start: 1;
     grid-row-end: 3;
-    border-radius: 10px;
 }
 
-.ffr{
+.contacts__box{
+    width: 302px;
+
+    padding: 35px 45px;
+
     background-color: #018ABE;
     border-radius: 10px;
-    width: 392px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
+.contacts__name{
+    font-family: 'El Messiri';
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: calc(34 / 24);
+}
 
-    margin: 90px 0px 30px;
+
+.contacts__location{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    margin:20px 0px 30px;
+
+    font-size: 0.875rem;
+    line-height: calc(19 / 14);
+}
+
+.contacts__address,
+.contacts__metro,
+.contacts__record{
+    display: flex;
+    align-items: center;
+}
+
+.contacts__address::before{
+    content: '';
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 20px;
+    background: url('../images/contacts/location.png') center / cover;  
+}
+
+.contacts__metro:before{
+    content: '';
+    display: inline-block;
+
+    width: 20px;
+    height: 16px;
+
+    margin-right: 20px;
+    background: url('../images/contacts/metro.png') center / cover;
+}
+
+.contacts__record:before{
+    content: '';
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 20px;
+    background: url('../images/contacts/calendar.png') center / cover;
+}
+
+.contacts__button,.contacts__button:hover{
+    background-color: white;
+    color: #018ABE;
 }

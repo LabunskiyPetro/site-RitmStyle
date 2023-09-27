@@ -1,0 +1,8 @@
+    
+.news__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 258px;
+    grid-gap: 24px;
+}
+

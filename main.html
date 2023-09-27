@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="css/slider.css">           <!-- Імпорт стилів для слайдера -->
 </head>
 <body>
-    <header class="header">
+    <header class="header header_main-retreat">
         <div class="header__container global-container">
-            <a class="header__logo" href="#">
+            <a class="header__logo" href="/main.html">
                 <img class="header__logo-img" src="images/header/logo.svg" alt="logo">
             </a>    
             <nav class="navigation">
                 <ul class="navigation__box">
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Головна</a>
+                        <a class="navigation__link" href="/main.html">Головна</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">Сеанси</a>
@@ -31,7 +31,7 @@
                         <a class="navigation__link" href="#">Контакти</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Новини</a>
+                        <a class="navigation__link" href="/html/news.html">Новини</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">Про мене</a>
@@ -41,37 +41,37 @@
                     </li>
                 </ul>
             </nav>
-            <a class="button-sign-up" href="#">
+            <a class="button button_sign-up" href="#">
                 Записатись на сеанс
             </a>
         </div>
     </header>
     <main class="content">
         <section class="content-hero">
-            <div class="hero__container global-container">
+            <div class="content-hero__container global-container">
                 <h3 class="subtitle">Зміцнення здоров'я</h3>
                 <h1 class="title title_box">Акватерапія RitmStyle</h1>
             </div>
         </section>
         <section class="content-sessions">
             <div class="global-container">
-                <h2 class="section-slider__name section-name_main">Сеанси RitmStyle</h2>
-                <div class="sessions__box">
-                    <div class="img-box img-box_big">
-                        <a class="img-box__link img-box__link_main">Стандартний RitmStyle</a>
-                    </div>
-                    <div class="img-box">
-                        <a class="img-box__link img-box__link_main">RitmStyle для пар</a>
-                    </div>
-                    <div class="img-box">
-                        <a class="img-box__link img-box__link_main">RitmStyle з повним зануренням під воду</a>
-                    </div>
-                    <div class="img-box">
-                        <a class="img-box__link img-box__link_main">RitmStyle для вагітних</a>
-                    </div>
-                    <div class="img-box">
-                        <a class="img-box__link img-box__link_main">RitmStyle + барвиста підводна фотосесія</a>
-                    </div>
+                <h2 class="section-name section-name_main">Сеанси RitmStyle</h2>
+                <div class="content-sessions__box">
+                    <a class="img-box img-box_main img-box_big" href="#">
+                        Стандартний RitmStyle
+                    </a>
+                    <a class="img-box img-box_main" href="#">
+                        RitmStyle для пар
+                    </a>
+                    <a class="img-box img-box_main" href="#">
+                        RitmStyle з повним зануренням під воду
+                    </a>
+                    <a class="img-box img-box_main" href="#">
+                        RitmStyle для вагітних
+                    </a>
+                    <a class="img-box img-box_main" href="#">
+                        RitmStyle + барвиста підводна фотосесія
+                    </a>
                 </div>  
             </div>
         </section>
@@ -80,7 +80,7 @@
             <div class="slider-container">
                 <div class="slider">
                     <div class="slider__line">
-                        <div class="slider__image" onclick="position(0)">
+                        <div class="slider__item" onclick="position(0)">
                             <div class="slider__content-box">
                                 <p class="slider__name">Олександра Дмитрієва</p>
                                 <p class="slider__description"> 
@@ -91,7 +91,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="slider__image slider__image_active" onclick="position(1)">
+                        <div class="slider__item slider__item_active" onclick="position(1)">
                             <div class="slider__content-box">
                                 <p class="slider__name">Кіра Іванова</p>
                                 <p class="slider__description">
@@ -102,18 +102,18 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="slider__image" onclick="position(2)">
+                        <div class="slider__item" onclick="position(2)">
                             <div class="slider__content-box">
                                 <p class="slider__name">Яна Жернова</p>
                                 <p class="slider__description"> 
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia eget mattis orci aliquam enim tincidunt gravida aliquet ut. Ipsum vulputate morbi felis, lobortis tincidunt. Pretium dictum odio feugiat auctor diam sit viverra gravida. Lobortis arcu rhoncus, mi mi vitae feugiat amet, vitae ac. Cursus diam turpis iaculis nisi sit. Vel blandit et sit elit vestibulum feugiat proin tempor, justo. Diam commodo, pellentesque at porttitor tristique faucibus faucibus morbi. Bibendum pretium lacus, tempus viverra vitae odio nunc eget.
-                                     </p>
+                                </p>
                                 <p class="slider__description">
                                     Tortor fermentum orci neque sed. Mauris faucibus diam lorem erat ullamcorper donec egestas neque. Maecenas malesuada mauris magnis sed id. Luctus vitae justo, in consectetur arcu. Nulla feugiat at eu in aliquet. Diam nunc, libero mauris tellus suspendisse morbi sagittis semper.
                                 </p>
                             </div>
                         </div>
-                        <div class="slider__image" onclick="position(3)">
+                        <div class="slider__item" onclick="position(3)">
                             <div class="slider__content-box">
                                 <p class="slider__name">Яна Жернова</p>
                                 <p class="slider__description"> 
@@ -134,90 +134,122 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="main_container_light">
+        <section class="content-about">
+            <div class="global-container_little">
                 <h2 class="section-name section-name_main">Про RitmStyle</h2>
-                <div class="about_box">
-                    <div class="about_item">
-                        <p class="about_name">RitmStyle масаж</p>
-                        <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.<br><br>
-                           Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.</p>
+                <div class="about">
+                    <div class="about__item">
+                        <p class="about__name">RitmStyle масаж</p>
+                        <p class="about__text about__text_box">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                        </p>  
+                        <p class="about__text about__text_box">
+                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+                        </p>
                     </div>
-                    
-                    <img src="images/sessions-bg.png" class="photo">   
-                    <img src="images/sessions-bg.png" class="photo">  
-                
-                    <div class="about_item">
-                        <p class="about_name">RitmStyle гідротерапія</p>
-                        <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque etiam. Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam tincidunt dui viverra. Eget quis ultricies sem nunc risus senectus luctus ultricies. Enim feugiat pharetra pharetra et.<br><br>
-                           Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum nisi id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel massa tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac lacus viverra ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus tempor at elit dui. Ullamcorper hendrerit feugiat libero tellus diam egestas dui tellus odio.</p>
+                    <img class="about__img"                   src="images/about/img.png" alt="about_1">   
+                    <img class="about__img about__img_height" src="images/about/img.png" alt="about_2">  
+                    <div class="about__item about__item_left">
+                        <p class="about__name">RitmStyle гідротерапія</p>
+                        <p class="about__text about__text_box">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque etiam. Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam tincidunt dui viverra. Eget quis ultricies sem nunc risus senectus luctus ultricies. Enim feugiat pharetra pharetra et.
+                        </p>
+                        <p class="about__text about__text_box">
+                            Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum nisi id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel massa tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac lacus viverra ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus tempor at elit dui. Ullamcorper hendrerit feugiat libero tellus diam egestas dui tellus odio.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="main_container_light">
-                <h2 class="section-slider__name section-name_main">Вартість сеансів</h2>
-                <div class="dd">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>RitmStyle із зануренням</th>
-                                <td>1000 грн.</td>
+        <section class="content-prices">
+            <div class="global-container_little">
+                <h2 class="section-name section-name_main">Вартість сеансів</h2>
+                <div class="price">
+                    <table class="price__table">
+                        <tbody class="price__box">
+                            <tr class="price__row">
+                                <th class="price__row-name">RitmStyle із зануренням</th>
+                                <td class="price__row-price">1000 грн.</td>
                             </tr>
-                            <tr>
-                                <th>Абонемент на RitmStyle</th>
-                                <td>5500 грн.</td>
+                            <tr class="price__row">
+                                <th class="price__row-name">Абонемент на RitmStyle</th>
+                                <td class="price__row-price">5500 грн.</td>
                             </tr>
-                            <tr>
-                                <th>RitmStyle для пар</th>
-                                <td>6000 грн.</td>
+                            <tr class="price__row">
+                                <th class="price__row-name">RitmStyle для пар</th>
+                                <td class="price__row-price">6000 грн.</td>
                             </tr>
-                            <tr>
-                                <th>RitmStyle для вагітних</th>
-                                <td>135000 грн.</td>
+                            <tr class="price__row">
+                                <th class="price__row-name">RitmStyle для вагітних</th>
+                                <td class="price__row-price">135000 грн.</td>
                             </tr>
-                            <tr>
-                                <th>RitmStyle + фотосесія</th>
-                                <td>115000 грн.</td>
+                            <tr class="price__row">
+                                <th class="price__row-name">RitmStyle + фотосесія</th>
+                                <td class="price__row-price">115000 грн.</td>
                             </tr> 
                         </tbody>
                     </table>
-                    <div>
-                        <img src="images/price-img.png">
-                        <p>Подарочный сертификат</p>
+                    <div class="price__box-thanks">
+                        <img class="price__img" src="images/price-img.png">
+                        <p class="price__img-description">Подарочный сертификат</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>   
+        <section class="content-contacts">   
             <div class="global-container">
-                <div class="ff">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10293.28743350271!2d24.0431743521046!3d49.836409623027386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add8113c375a3%3A0xe519f6447de7effd!2z0KXQvtGB0YLQtdC7INCe0YHRgtGA0ZbQsg!5e0!3m2!1suk!2sua!4v1694985493969!5m2!1suk!2sua" width="856" height="604" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="ffr">
-                        <p>Басейн WorkClass</p>
-                        <p>Шевченківська 140</p>
-                        <p>м. Т. Шевченка</p>
-                        <p>Запис за домовленістю</p>
-                        <a>Записатись на сеанс</a>
+                <div class="contacts">
+                    <iframe class="contacts__map" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10293.28743350271!2d24.0431743521046!3d49.836409623027386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add8113c375a3%3A0xe519f6447de7effd!2z0KXQvtGB0YLQtdC7INCe0YHRgtGA0ZbQsg!5e0!3m2!1suk!2sua!4v1694985493969!5m2!1suk!2sua"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    <div class="contacts__box">
+                        <p class="contacts__name">
+                            Басейн WorkClass
+                        </p>
+                        <div class="contacts__location">
+                            <p class="contacts__address">
+                                Шевченківська 140
+                            </p>
+                            <p class="contacts__metro">
+                                м. Т. Шевченка
+                            </p>
+                            <p class="contacts__record">
+                                Запис за домовленістю
+                            </p>
+                        </div>
+                        <a class="contacts__button button_sign-up" href="#">
+                            Записатись на сеанс
+                        </a>
                     </div>
-                    <div class="ffr">
-                        <p>Басейн WorkClass</p>
-                        <p>Шевченківська 140</p>
-                        <p>м. Т. Шевченка</p>
-                        <p>Запис за домовленістю</p>
-                        <a>Записатись на сеанс</a>
+                    <div class="contacts__box">
+                        <p class="contacts__name">
+                            Басейн "На Хрищатику"
+                        </p>
+                        <div class="contacts__location">
+                            <p class="contacts__address">
+                                2-й проїзд Лесі Українки
+                            </p>
+                            <p class="contacts__metro">
+                                м. Хрищатик
+                            </p>
+                            <p class="contacts__record">
+                                Запис за домовленістю
+                            </p>
+                        </div>
+                        <a class="contacts__button button_sign-up" href="#">
+                            Записатись на сеанс
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer footer_main">
         <div class="global-container">
-            <div class="footer">
-                <p>© 2022-2023 RitmStyle</p>
-                <p>Зроблено labunskiy</p>  
-            </div>
+            <p class="footer__сopyright">© 2022-2023 RitmStyle</p>
+            <p class="footer__did">Зроблено <a class="footer__link-author" href="https://t.me/labunskiypetro">labunskiy</a></p>  
         </div>
     </footer>
     <script src="js/slider.js"></script>

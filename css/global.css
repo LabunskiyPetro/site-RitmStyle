@@ -9,6 +9,7 @@ body{
     
     color: white;
 
+    background: linear-gradient( 90deg, #162831, #0c1920, #162831);
     background-color: #162831;
 }
 
@@ -17,24 +18,37 @@ a, a:hover{
     color: inherit;
 }
 
-h1, h2, h3{
+.title, .subtitle, .section-name{
     font-family: 'El Messiri';
     font-weight: 700;
 
     text-align: center;
 }
 
+/* Container */
 .global-container{
     max-width: 1296px;
+    margin: 0px auto;
+}
+
+.global-container_little{
+    max-width: 1076px;
     margin: 0px auto;
 }
 
 /* header */
 .header{
     height: 60px;
+}
 
+.header_main-retreat{
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+.header_minor-retreat{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .header__container{
@@ -43,7 +57,9 @@ h1, h2, h3{
     align-items: center;
 }
 
-.header__logo-img{
+
+.header__logo-img,
+.header__logo{
     height: 60px;
     width: 60px;
 }
@@ -62,22 +78,30 @@ h1, h2, h3{
     line-height: calc(19 / 14);
 }
 
-.button-sign-up, .button-sign-up:hover{
+.button{
+    background-color: #018ABE;
+}
+
+.button_sign-up, .button_sign-up:hover{
     font-size: 0.8125rem;
     font-weight: 600;
     line-height: calc(18 / 13);
     
-    background-color: #018ABE;
     border-radius: 3px;
 
     width: 125px;
     padding: 9px 15px;
 }
 
+.line{
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: 50%;
+}
+
 .title{
     font-size: 4rem;
     line-height: calc(90 / 64);
-    text-align: center;
 }
 
 .title_box{
@@ -91,7 +115,11 @@ h1, h2, h3{
 }
 
 .section-name_main{
-    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.section-name_minor{
+    margin: 60px 0px;
 }
 
 .subtitle{
@@ -100,8 +128,7 @@ h1, h2, h3{
 }
  
 .section-name:before, .section-name::after,
-.subtitle::before, .subtitle::after, 
-th::before{
+.subtitle::before, .subtitle::after{
     content: '';
     display: inline-block;
 
@@ -112,13 +139,13 @@ th::before{
 .section-name::before, .section-name::after{
     margin: 0px 45px;
 
-    background: url('../images/petal_blue.svg'); 
+    background: url('../images/global/petal_blue.svg'); 
 }
 
-.subtitle::before,.subtitle::after{
+.subtitle::before, .subtitle::after{
     margin: 0px 66px;
 
-    background: url('../images/petal_white.svg'); 
+    background: url('../images/global/petal_white.svg'); 
 }
 
 .section-name::after, .subtitle::after{
@@ -129,21 +156,46 @@ th::before{
     display: flex;
     align-items: end;
 
+    font-family: 'El Messiri';
+    font-weight: 700;
+
     border-radius: 10px;
     background: url('../images/sessions-bg.png') center / cover;
+}
+
+.img-box_main{
+    font-size: 1.5rem;
+    line-height: calc(34 / 24);
+    
+    padding: 30px 40px;
+}
+
+.img-box_minor{
+    font-size: 1.5rem;
+    line-height: calc(34 / 24);
+    
+    padding: 30px 35px;
 }
 
 .img-box_big{    
     grid-row-start: 1;
     grid-row-end: 3;
+
+    padding: 50px;
 }
 
-.img-box__link{
-    font-size: 1.5rem;
-    line-height: calc(34 / 24);
+.footer{
+    height: 19px;
 }
 
-.img-box__link_main{
-    padding: 40px 30px;
+.footer_main{
+    margin: 90px 0px 30px;
 }
 
+.footer__сopyright{
+    display: inline-flex;
+}
+
+.footer__did{
+    float: right;
+}
