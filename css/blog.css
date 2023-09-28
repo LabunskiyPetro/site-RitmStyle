@@ -1,0 +1,51 @@
+.content-blog__box{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+
+    border: 2px solid #018ABE; 
+    border-radius: 20px;
+
+    padding: 50px 60px;
+}
+
+.blog__box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.blog__name{
+    font-family: 'El Messiri';
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.375;
+
+    margin: 30px 0px 20px;
+}
+
+.blog__text{
+    font-weight: 300;
+    line-height: 1.375;
+
+    margin-bottom: 1rem;
+}
+
+.blog__more{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.357;
+
+    background-color: #018ABE;
+
+    border-radius: 5px;
+
+    margin-top: 24px;
+    padding: 10px 20px;
+}

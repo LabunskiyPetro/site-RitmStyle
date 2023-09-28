@@ -22,23 +22,22 @@
                         <a class="navigation__link" href="/main.html">Головна</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Сеанси</a>
+                        <a class="navigation__link" href="/main.html#sessions">Сеанси</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Відгуки</a>
+                        <a class="navigation__link" href="/main.html#reviews">Відгуки</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Контакти</a>
+                        <a class="navigation__link" href="/main.html#contacts">Контакти</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="/html/news.html">Новини</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Про мене</a>
+                        <a class="navigation__link" href="/main.html#about">Про мене</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">Блог</a>
-                    </li>
+                        <a class="navigation__link" href="/html/blog.html">Блог</a>
                 </ul>
             </nav>
             <a class="button button_sign-up" href="#">
@@ -53,7 +52,7 @@
                 <h1 class="title title_box">Акватерапія RitmStyle</h1>
             </div>
         </section>
-        <section class="content-sessions">
+        <section class="content-sessions" id="sessions">
             <div class="global-container">
                 <h2 class="section-name section-name_main">Сеанси RitmStyle</h2>
                 <div class="content-sessions__box">
@@ -75,7 +74,7 @@
                 </div>  
             </div>
         </section>
-        <section class="content-slider">
+        <section class="content-reviews" id="reviews">
             <h2 class="section-name section-name_main">Відгуки</h2>
             <div class="slider-container">
                 <div class="slider">
@@ -134,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section class="content-about">
+        <section class="content-about" id="about">
             <div class="global-container_little">
                 <h2 class="section-name section-name_main">Про RitmStyle</h2>
                 <div class="about">
@@ -147,8 +146,8 @@
                             Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
                         </p>
                     </div>
-                    <img class="about__img"                   src="images/about/img.png" alt="about_1">   
-                    <img class="about__img about__img_height" src="images/about/img.png" alt="about_2">  
+                    <img class="about__img"                   src="images/main/about/img.png" alt="about_1">   
+                    <img class="about__img about__img_height" src="images/main/about/img.png" alt="about_2">  
                     <div class="about__item about__item_left">
                         <p class="about__name">RitmStyle гідротерапія</p>
                         <p class="about__text about__text_box">
@@ -190,13 +189,13 @@
                         </tbody>
                     </table>
                     <div class="price__box-thanks">
-                        <img class="price__img" src="images/price-img.png">
+                        <img class="price__img" src="images/main/price/price.png">
                         <p class="price__img-description">Подарочный сертификат</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="content-contacts">   
+        <section class="content-contacts" id="contacts">   
             <div class="global-container">
                 <div class="contacts">
                     <iframe class="contacts__map" 
@@ -248,8 +247,10 @@
     </main>
     <footer class="footer footer_main">
         <div class="global-container">
-            <p class="footer__сopyright">© 2022-2023 RitmStyle</p>
-            <p class="footer__did">Зроблено <a class="footer__link-author" href="https://t.me/labunskiypetro">labunskiy</a></p>  
+            <div class="footer_box">
+                <p class="footer__copyright">© 2022-2023 RitmStyle</p>
+                <p class="footer__did">Зроблено <a class="footer__link-author" href="https://t.me/labunskiypetro">labunskiy</a></p>  
+            </div>
         </div>
     </footer>
     <script src="js/slider.js"></script>
